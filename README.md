@@ -12,4 +12,5 @@ This is my first laravel project
 -   composer install : `brew install composer`
 -   Laravel install : `composer create-project laravel/laravel first-laravel-api`
 -   Start server : `php artisan serve`
--   Model migration : `php artisan make:model Product --migration`
+-   Make Model & migration : `php artisan make:model Product --migration`, `php artisan migrate`
+-   Make Controller : `php artisan make:controller ProductController --api`
