@@ -15,9 +15,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-
+// Public routes
 Route::resource('products', ProductController::class);
-Route::get('/products/search/{name}', [ProductController::class, 'search']);
+// Route::get('/products/search/{name}', [ProductController::class, 'search']);
+
+// Protected routes
+Route::group(['middleware' => ['auth:sanctum']], function () {
+    Route::get('/products/search/{name}', [ProductController::class, 'search']);
+});
 
 // Route::get('/products', [ProductController::class, 'index']);
 // Route::post('/products', [ProductController::class, 'store']);

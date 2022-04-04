@@ -14,3 +14,5 @@ This is my first laravel project
 -   Start server : `php artisan serve`
 -   Make Model & migration : `php artisan make:model Product --migration`, `php artisan migrate`
 -   Make Controller : `php artisan make:controller ProductController --api`
+-   Sanctum install : `composer require Laravel/sanctum`
+-   Sanctum migration : `php artisan vendor:publish --provider="Laravel\Sanctum\SanctumServiceProvider"`
