@@ -16,3 +16,9 @@ This is my first laravel project
 -   Make Controller : `php artisan make:controller ProductController --api`
 -   Sanctum install : `composer require Laravel/sanctum`
 -   Sanctum migration : `php artisan vendor:publish --provider="Laravel\Sanctum\SanctumServiceProvider"`
+
+## Tools
+
+-   Visual Studio Code
+-   Postman
+-   DB Browser for SQLite
